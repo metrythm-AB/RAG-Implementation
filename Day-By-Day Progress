@@ -3,36 +3,43 @@
 Week 1:- Basic RAG Implementation Using SentenceTransformer Model
 
 Day 1:- 9 September 2024
+
 Topic:- Introduction to RAG
 Concepts Covered:- Started learning about Retrieval Augmented Generation and understanding how it enhances model responses by retrieving relevant documents and generating answers based on them
 My Understanding:- RAG helps in generating context aware answers by combining document retrieval with language models. Key focus was on embedding texts and retrieving them efficiently
 
 Day 2:- 10 September 2024
+
 Topic:- Embedding Models Overview
 Concepts Covered:- Learned about embedding techniques and how embeddings are used to convert documents and queries into vectors for similarity search
 My Understanding:- Embeddings are the core part of RAG where text is transformed into high-dimensional vectors. Worked with SentenceTransformers like all-MiniLM-L6-v2 for encoding texts
 
 Day 3:- 11 September 2024
+
 Topic:- Pinecone Integration
 Concepts Covered:- Implemented Pinecone as the vector database for storing and retrieving document embeddings
 My Understanding:- Pinecone manages the vector database efficiently and handles document storage, vector similarity queries  and fast retrieval
 
 Day 4:- 12 September 2024
+
 Topic:- Document Ingestion
 Concepts Covered:- Indexed a set of documents  into Pinecone and explored the concept of document vectors
 My Understanding:- Successful insertion of documents and embeddings into the Pinecone index for retrieval later
 
 Day 5:- 13 September 2024
+
 Topic:- Querying and Retrieval in RAG
 Concepts Covered:- Query the Pinecone index using vector embeddings to retrieve the most relevant documents
 My Understanding:- This is where RAG performs by fetching relevant document vectors from the database using cosine similarity
 
 Day 6:- 14 September 2024
+
 Topic:- Fine-tuning and Evaluation
 Concepts Covered:- Fine-tuned the RAG system by adjusting parameters such as the number of retrieved documents (top_k) and evaluated its performance
 My Understanding:- Fine-tuning improves the relevance of retrieved results and allows us to optimize RAG for specific tasks
 
 Day 7:- 16 September 2024
+
 Topic:- Presentation of Basic RAG
 Concepts Covered:- Summarized the work on basic RAG implementation,organized the workflow and documented key learnings
 My Understanding:- Gained a solid foundation in basic RAG implementation using SentenceTransformer and Pinecone
@@ -40,17 +47,64 @@ My Understanding:- Gained a solid foundation in basic RAG implementation using S
 Week 2:- Working Towards Multimodal RAG
 
 Day 1:- 17 September 2024
+
 Topic:- Introduction to Multimodal Embeddings
 Concepts Covered:- Began learning how to extend RAG to handle multiple modalities, specifically combining text and image data
 My Understanding:- Multimodal RAG integrates both text and image embeddings for more comprehensive queries
 
 Day 2:- 18 September 2024
+
 Topic:- Multimodal Embedding Techniques
 Concepts Covered:- Learned about multimodal embedding techniques that combine text and image vectors using models like CLIP
 My Understanding:- Multimodal embeddings allow the system to index both textual and visual data for improved retrieval across modalities
 
 Day 3:- 19 September 2024
+
 Topic:- Image and Text Handling in Pinecone
 Concepts Covered:- Integrated the multimodal embeddings into Pinecone for indexing both images and texts, preparing to handle more complex queries
 My Understanding:- Implemented Pinecone’s ability to store and query multimodal data, allowing the retrieval of both text and image information
+
+Day 4:- 20 September 2024
+
+Topic:- Debugging Multimodal RAG Implementation
+Concepts Covered:- Encountered issues with embedding dimensions in the multimodal implementation.Learned error handling techniques and debugging processes related to CLIP model embeddings.
+Gained insights into dimension mismatch issues between text and image embeddings.
+My Understanding:- Facing issues with embedding dimensions helped me understand how important it is to align embeddings for text and image data in a shared vector space. This was the first step in properly addressing the challenges with multimodal RAG.
+
+Day 5:- 23 September 2024
+
+Topic: Error Handling and Continued Debugging of CLIP Model
+Concepts Covered:- Worked through dimension mismatch errors related to the CLIP model's text and image embeddings.Continued troubleshooting issues regarding the integration of embeddings into Pinecone.
+Explored Pinecone's specifications for handling multidimensional vector data.
+My Understanding:- Further understanding of how to troubleshoot errors in embedding integration and how to configure Pinecone to handle multimodal queries efficiently. This process reinforced my understanding of embedding dimensions and storage in vector databases.
+
+Day 6:- 24 September 2024
+
+Topic:- Resolving Indexing and Dimension Mismatches in Pinecone
+Concepts Covered:- Dived deeper into Pinecone indexing and resolved issues related to indexing both text and image embeddings.Worked on correctly aligning vector dimensions between the two modalities.
+Studied Pinecone's API for creating multimodal indexes and managing them.
+My Understanding:-Gained a better understanding of how Pinecone manages vector embeddings for text and images. Resolving these issues taught me about vector similarity search and how it plays a key role in effective retrieval of multimodal data.
+Day 7:- 25 September 2024
+
+Topic:- Exploring Efficient Vector Indexing for Multimodal RAG
+Concepts Covered:-Studied the creation of vector indexes that can handle both text and image embeddings efficiently.Began learning how to optimize indexes in Pinecone for faster query retrieval.
+Continued debugging the multimodal RAG system for performance issues.
+My Understanding:- This day was focused on improving the efficiency of vector indexing in Pinecone. I learned how to create and manage indexes for both text and image embeddings while ensuring quick and accurate retrieval during queries.
+
+Week 3:- Fine Tuning the MultiModal
+
+Day 1:- 26 September 2024
+
+Topic: Enhancing Multimodal Query Retrieval
+Concepts Covered:-Implemented changes in how queries are handled for multimodal RAG, ensuring relevant results based on both text and image inputs.Focused on improving the top-k retrieval mechanism for more accurate results.
+Gained insights into optimizing query performance by refining the use of embeddings.
+My Understanding:-Learning to fine-tune query handling for multimodal data was crucial. I now understand how to improve performance by working on the retrieval mechanism, which ensures more relevant results when querying both text and image data.
+
+Day 2:- 27 September 2024
+
+Topic: Successful Multimodal RAG System without Errors
+Concepts Covered:- Today, I successfully implemented the multimodal RAG system with no errors.The system can now handle both text and image embeddings and return relevant results.
+Completed the final testing phase and ensured that everything worked smoothly.
+My Understanding:-The process taught me how to build, debug, and implement a complex system like multimodal RAG from scratch. I now fully understand how multimodal embeddings work, how to handle them in a vector database, and how to use them for effective information retrieval.
+
 
